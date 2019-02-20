@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+	//коммент
 	int a, b;
 	string name1 = "C:\\Users\\asbox\\source\\repos\\File_generator\\File_generator";
 	string name2;
