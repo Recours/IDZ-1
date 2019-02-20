@@ -12,7 +12,18 @@ using namespace std;
 
 int main()
 {
-	Semi a;
-	cout << a.summa(2, 3);
-	//nikita hui
+	int a, b;
+	string name1 = "C:\\Users\\asbox\\source\\repos\\File_generator\\File_generator";
+	string name2;
+	cin >> name2;
+	if (file_check(name2) == 2) {
+		cout << "Ошибка работы с файлом";
+		system("pause");
+		return 0;
+	}
+	ifstream file;
+	file.open(name1 + name2);
+	getline(file, name1);
+	file.close();
+	system("pause");
 }
